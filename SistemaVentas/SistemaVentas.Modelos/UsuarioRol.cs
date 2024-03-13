@@ -14,7 +14,7 @@ namespace SistemaVentas.Modelos
         public int IdRol { get; set; }
         public DateTime FechaAsignada { get; set; }
         public string Estado { get; set; }
-
+        
 
     }
 }
