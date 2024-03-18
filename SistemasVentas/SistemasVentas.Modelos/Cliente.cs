@@ -12,6 +12,6 @@ namespace SistemasVentas.Modelos
         public int IdPersona { get; set; }
         public string TipoCliente { get; set; }
         public string CodigoCliente { get; set; }
-        public string Estado { get; set; }
+        public string Estado {  get; set; }
     }
 }
