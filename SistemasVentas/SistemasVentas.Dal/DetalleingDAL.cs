@@ -1,19 +1,20 @@
-﻿using System;
+﻿using SistemasVentas.DAL;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SistemasVentas.DAL
+namespace SistemasVentas.Dal
 {
-    public class DetalleingDAL
+    public class DetalleIngDal
     {
-        public DataTable ListarDetalleingDal()
+        public DataTable ListarDetallesIngDal()
         {
-            string consulta = "select * from detalleing";
-            DataTable Lista = conexion.EjecutarDataTabla(consulta, "tabla");
-            return Lista;
+            string consulta = "select * from DetalleIng";
+            DataTable lista = conexion.EjecutarDataTabla(consulta, "tabla");
+            return lista;
         }
     }
 }

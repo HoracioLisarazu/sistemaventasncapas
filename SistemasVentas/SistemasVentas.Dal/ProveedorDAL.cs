@@ -1,4 +1,4 @@
-﻿using SistemasVentas.Modelos;
+﻿using SistemasVentas.DAL;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -6,20 +6,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SistemasVentas.DAL
+namespace SistemasVentas.Dal
 {
-    public class ProveedorDAL
+    public class ProveedorDal
     {
-        public DataTable ListarProveedorDal()
+        public DataTable ListarProveedoresDal()
         {
-            string consulta = "select * from proveedor";
-            DataTable Lista = conexion.EjecutarDataTabla(consulta, "tabla");
-            return Lista;
-        }
-        public void InsertarProveedorDal(Proveedor proveedor)
-        {
-            string consulta = "insert into Proveedor values('" + proveedor.Nombre + "','" + proveedor.Telefono + "','" + proveedor.Direccion +"'," + "'Activo')";
-            conexion.Ejecutar(consulta);
+            string consulta = "select * from Proveedor";
+            DataTable lista = conexion.EjecutarDataTabla(consulta, "tabla");
+            return lista;
         }
     }
 }

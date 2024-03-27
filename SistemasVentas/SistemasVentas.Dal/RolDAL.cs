@@ -1,26 +1,20 @@
-﻿using System;
+﻿using SistemasVentas.DAL;
+using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
-using System.Data;
 using System.Threading.Tasks;
-using SistemasVentas.Modelos;
 
-namespace SistemasVentas.DAL
+namespace SistemasVentas.Dal
 {
-    public class RolDAL
+    public class RolDal
     {
-        public DataTable ListarRolDal()
+        public DataTable ListarRolesDal()
         {
             string consulta = "select * from rol";
-            DataTable Lista = conexion.EjecutarDataTabla(consulta, "tabla");
-            return Lista;
+            DataTable lista = conexion.EjecutarDataTabla(consulta, "tabla");
+            return lista;
         }
-        public void InsertarRolDal(Rol rol)
-        {
-            string consulta = "insert into TipoProd values('" + rol.Nombre + "'," + "'Activo')";
-            conexion.Ejecutar(consulta);
-        }
-
     }
 }

@@ -1,4 +1,4 @@
-﻿using SistemasVentas.Modelos;
+﻿using SistemasVentas.DAL;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -6,20 +6,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SistemasVentas.DAL
+namespace SistemasVentas.Dal
 {
-    public class TipoProdDAL
+    public class TipoProdDal
     {
-        public DataTable ListarTipoProdDal()
+        public DataTable ListarTiposProductosDal()
         {
-            string consulta = "select * from tipoprod";
-            DataTable Lista = conexion.EjecutarDataTabla(consulta, "tabla");
-            return Lista;
-        }
-        public void InsertarTipoProdDal(TipoProd tipoProd)
-        {
-            string consulta = "insert into TipoProd values('" + tipoProd.Nombre + "'," + "'Activo')";
-            conexion.Ejecutar(consulta);
+            string consulta = "select * from TipProd";
+            DataTable lista = conexion.EjecutarDataTabla(consulta, "tabla");
+            return lista;
         }
     }
 }

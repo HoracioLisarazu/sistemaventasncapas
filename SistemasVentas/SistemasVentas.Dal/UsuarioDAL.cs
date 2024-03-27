@@ -1,4 +1,5 @@
-﻿using SistemasVentas.Modelos;
+﻿using SistemasVentas.DAL;
+using SistemaVentas.Modelo;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -6,9 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SistemasVentas.DAL
+namespace SistemasVentas.Dal
 {
-     public class UsuarioDAL
+    public class UsuarioDal
     {
         public DataTable ListarUsuarioDal()
         {
@@ -24,6 +25,5 @@ namespace SistemasVentas.DAL
                                                             " '" + usuario.FechaReg + "')";
             conexion.Ejecutar(consulta);
         }
-
     }
 }
