@@ -19,11 +19,7 @@ namespace SistemaVentas.VISTA.PersonaVistas
             InitializeComponent();
         }
 
-        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
+ 
         PersonaBss bss = new PersonaBss();
 
         private void PersonaListarVista_Load(object sender, EventArgs e)

@@ -9,6 +9,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="RolAdministrador\**" />
+    <EmbeddedResource Remove="RolAdministrador\**" />
+    <None Remove="RolAdministrador\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\SistemaVentas.BSS\SistemaVentas.BSS.csproj" />
     <ProjectReference Include="..\SistemaVentas.Modelo\SistemaVentas.Modelo.csproj" />
   </ItemGroup>
@@ -26,10 +32,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="RolAdministrador\" />
   </ItemGroup>
 
 </Project>

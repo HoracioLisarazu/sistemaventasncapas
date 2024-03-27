@@ -1,6 +1,6 @@
-﻿namespace SistemaVentas.VISTA.PersonaVistas
+﻿namespace SistemaVentas.VISTA.ProductoVistas
 {
-    partial class PersonaListarVista
+    partial class EscogerProductoVista
     {
         /// <summary>
         /// Required designer variable.
@@ -30,10 +30,10 @@
         {
             dataGridView1 = new DataGridView();
             button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
-            button4 = new Button();
+            label1 = new Label();
+            panel1 = new Panel();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // dataGridView1
@@ -41,77 +41,63 @@
             dataGridView1.AllowUserToAddRows = false;
             dataGridView1.AllowUserToDeleteRows = false;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(12, 12);
+            dataGridView1.Location = new Point(43, 109);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.ReadOnly = true;
             dataGridView1.RowTemplate.Height = 25;
-            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dataGridView1.Size = new Size(621, 426);
-            dataGridView1.TabIndex = 1;
+            dataGridView1.Size = new Size(859, 406);
+            dataGridView1.TabIndex = 0;
             // 
             // button1
             // 
-            button1.DialogResult = DialogResult.OK;
-            button1.Location = new Point(487, 457);
+            button1.Location = new Point(754, 549);
             button1.Name = "button1";
-            button1.Size = new Size(118, 23);
-            button1.TabIndex = 2;
+            button1.Size = new Size(159, 49);
+            button1.TabIndex = 1;
             button1.Text = "SELECCIONAR";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
-            // button2
+            // label1
             // 
-            button2.Location = new Point(21, 457);
-            button2.Name = "button2";
-            button2.Size = new Size(115, 23);
-            button2.TabIndex = 3;
-            button2.Text = "AGREGAR";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
+            label1.AutoSize = true;
+            label1.Font = new Font("Times New Roman", 24F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Location = new Point(411, 25);
+            label1.Name = "label1";
+            label1.Size = new Size(202, 36);
+            label1.TabIndex = 2;
+            label1.Text = "PRODUCTOS";
             // 
-            // button3
+            // panel1
             // 
-            button3.Location = new Point(172, 457);
-            button3.Name = "button3";
-            button3.Size = new Size(115, 23);
-            button3.TabIndex = 4;
-            button3.Text = "EDITAR";
-            button3.UseVisualStyleBackColor = true;
-            button3.Click += button3_Click;
+            panel1.Controls.Add(label1);
+            panel1.Location = new Point(-1, -2);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(1018, 79);
+            panel1.TabIndex = 3;
             // 
-            // button4
-            // 
-            button4.Location = new Point(321, 457);
-            button4.Name = "button4";
-            button4.Size = new Size(115, 23);
-            button4.TabIndex = 5;
-            button4.Text = "ELIMINAR";
-            button4.UseVisualStyleBackColor = true;
-            button4.Click += button4_Click;
-            // 
-            // PersonaListarVista
+            // EscogerProductoVista
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(645, 504);
-            Controls.Add(button4);
-            Controls.Add(button3);
-            Controls.Add(button2);
+            ClientSize = new Size(1016, 619);
             Controls.Add(button1);
             Controls.Add(dataGridView1);
-            Name = "PersonaListarVista";
-            Text = "PersonaListarVista";
-            Load += PersonaListarVista_Load;
+            Controls.Add(panel1);
+            Name = "EscogerProductoVista";
+            Text = "EscogerProductoVista";
+            Load += EscogerProductoVista_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ResumeLayout(false);
         }
 
         #endregion
+
         private DataGridView dataGridView1;
         private Button button1;
-        private Button button2;
-        private Button button3;
-        private Button button4;
+        private Label label1;
+        private Panel panel1;
     }
 }

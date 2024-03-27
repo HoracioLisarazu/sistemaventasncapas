@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SistemaVentas.VISTA.InicioVistas
+namespace SistemaVentas.VISTA.MenuVistas
 {
-    public partial class InicioVista : Form
+    public partial class MenuVista : Form
     {
-        public InicioVista()
+        public MenuVista()
         {
             InitializeComponent();
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

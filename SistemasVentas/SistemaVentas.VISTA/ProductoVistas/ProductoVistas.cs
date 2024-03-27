@@ -1,4 +1,5 @@
 ﻿using SistemaVentas.BSS;
+using SistemaVentas.VISTA.PersonaVistas;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,7 +21,16 @@ namespace SistemaVentas.VISTA.ProductoVistas
         ProductoBss bss = new ProductoBss();
         private void ProductoVistas_Load(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = bss.ListarProductoBss();
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            EscogerProductoVista fr = new EscogerProductoVista();
+            if (fr.ShowDialog() == DialogResult.OK)
+            {
+                dataGridView1.DataSource = bss.ListarProductoBss();
+            }
         }
     }
 }
