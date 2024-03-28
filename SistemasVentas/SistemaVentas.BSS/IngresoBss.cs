@@ -15,5 +15,10 @@ namespace SistemaVentas.BSS
         {
             return dal.ListarIngresosDal();
         }
+
+        public DataTable IngresoDatosBss()
+        {
+            return dal.IngresoDatosDal();
+        }
     }
 }

@@ -15,5 +15,10 @@ namespace SistemaVentas.BSS
         {
             return dal.ListarClientesDal();
         }
+
+        public DataTable ClienteDatosBss()
+        {
+            return dal.ClienteDatosDal();
+        }
     }
 }

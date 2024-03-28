@@ -15,5 +15,9 @@ namespace SistemaVentas.BSS
         {
             return dal.ListarUsuariosRolDal();
         }
+        public DataTable UsuarioRolDatosBss()
+        {
+            return dal.UsuarioRolDatosDal();
+        }
     }
 }

@@ -25,5 +25,11 @@ namespace SistemasVentas.Dal
                                                             " '" + usuario.FechaReg + "')";
             conexion.Ejecutar(consulta);
         }
+
+        public DataTable UsuarioDatosDal()
+        {
+            string consulta = "SELECT        PERSONA.NOMBRE, PERSONA.APELLIDO, USUARIO.NOMBREUSER, ROL.NOMBRE AS CARGO, USUARIOROL.FECHAASIGNA\r\nFROM            PERSONA INNER JOIN\r\n                         USUARIO ON PERSONA.IDPERSONA = USUARIO.IDPERSONA INNER JOIN\r\n                         USUARIOROL ON USUARIO.IDUSUARIO = USUARIOROL.IDUSUARIO INNER JOIN\r\n                         ROL ON USUARIOROL.IDROL = ROL.IDROL";
+            return conexion.EjecutarDataTabla(consulta, "sdgg");
+        }
     }
 }

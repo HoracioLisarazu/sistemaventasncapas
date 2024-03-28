@@ -127,7 +127,7 @@
             // 
             // panel3
             // 
-            panel3.BackColor = Color.DarkGray;
+            panel3.BackColor = SystemColors.ControlDarkDark;
             panel3.Controls.Add(button3);
             panel3.Controls.Add(label5);
             panel3.Location = new Point(376, 578);
@@ -159,7 +159,7 @@
             // 
             // panel1
             // 
-            panel1.BackColor = Color.FromArgb(173, 29, 154);
+            panel1.BackColor = Color.White;
             panel1.Controls.Add(label4);
             panel1.Location = new Point(2, 0);
             panel1.Name = "panel1";

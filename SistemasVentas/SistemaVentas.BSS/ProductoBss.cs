@@ -15,5 +15,10 @@ namespace SistemaVentas.BSS
         {
             return dal.ListarProductosDal();
         }
+
+        public DataTable ProductoDatosBss() 
+        {
+            return dal.ProductosDatosDal();
+        }
     }
 }

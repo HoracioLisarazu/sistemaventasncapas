@@ -47,7 +47,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(317, 100);
+            label1.Location = new Point(317, 134);
             label1.Name = "label1";
             label1.Size = new Size(71, 21);
             label1.TabIndex = 0;
@@ -57,7 +57,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(315, 167);
+            label2.Location = new Point(315, 201);
             label2.Name = "label2";
             label2.Size = new Size(73, 21);
             label2.TabIndex = 1;
@@ -67,7 +67,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(359, 234);
+            label3.Location = new Point(359, 268);
             label3.Name = "label3";
             label3.Size = new Size(29, 21);
             label3.TabIndex = 2;
@@ -77,7 +77,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(231, 301);
+            label4.Location = new Point(231, 335);
             label4.Name = "label4";
             label4.Size = new Size(157, 21);
             label4.TabIndex = 3;
@@ -87,7 +87,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label5.Location = new Point(294, 368);
+            label5.Location = new Point(294, 402);
             label5.Name = "label5";
             label5.Size = new Size(94, 21);
             label5.TabIndex = 4;
@@ -97,7 +97,7 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label6.Location = new Point(213, 435);
+            label6.Location = new Point(213, 469);
             label6.Name = "label6";
             label6.Size = new Size(175, 21);
             label6.TabIndex = 5;
@@ -105,35 +105,35 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(447, 98);
+            textBox1.Location = new Point(447, 132);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(313, 23);
             textBox1.TabIndex = 6;
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(447, 165);
+            textBox2.Location = new Point(447, 199);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(313, 23);
             textBox2.TabIndex = 7;
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(447, 232);
+            textBox3.Location = new Point(447, 266);
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(313, 23);
             textBox3.TabIndex = 8;
             // 
             // textBox4
             // 
-            textBox4.Location = new Point(447, 299);
+            textBox4.Location = new Point(447, 333);
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(313, 23);
             textBox4.TabIndex = 9;
             // 
             // textBox5
             // 
-            textBox5.Location = new Point(447, 366);
+            textBox5.Location = new Point(447, 400);
             textBox5.Name = "textBox5";
             textBox5.PasswordChar = '*';
             textBox5.Size = new Size(313, 23);
@@ -141,7 +141,7 @@
             // 
             // textBox6
             // 
-            textBox6.Location = new Point(447, 433);
+            textBox6.Location = new Point(447, 467);
             textBox6.Name = "textBox6";
             textBox6.PasswordChar = '*';
             textBox6.Size = new Size(313, 23);
@@ -150,7 +150,7 @@
             // button1
             // 
             button1.Font = new Font("Times New Roman", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            button1.Location = new Point(500, 503);
+            button1.Location = new Point(500, 537);
             button1.Name = "button1";
             button1.Size = new Size(118, 40);
             button1.TabIndex = 12;
